@@ -6,5 +6,20 @@
 </head>
 <body>
     <h1>Doclist</h1>
+
+    {% for collection in collections %}
+        <h2>{{ collection.name|safe}}</h2>
+    {% endfor %}
+
+    <form method="POST" action="{% url 'add-collection'%}">
+        {% csrf_token %}
+
+        <input type="text" name="collection-name">
+        <button type="submit">Add</button>
+
+    </form>
 </body>
+
+
+ <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </html>
