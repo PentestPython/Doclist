@@ -10,8 +10,8 @@
 
 ## Fonctionalités
 
-[x] Ajouter une collection  
-[x] Supprimer une collection  
+[] Ajouter une collection  
+[] Supprimer une collection  
 [] Empêcher l'ajout d'une collection en doublon  
 [] Ajouter une tâche (reliée à une collection)  
 [] Supprmer une tâche  
