@@ -8,9 +8,7 @@
 <h1>Doclist</h1>
 <div id="collections">
     {% for collection in collections %}
-    <button hx-get="{% url 'get-tasks' collection.pk %}"
-            hx-target="#tasks"
-            hx-push-url="?collection={{ collection.slug }}">{{ collection.name }}</button>
+        {% include 'tasks/collection.html' with collection=collection%}
     {% endfor %}
 </div>
 <form method="POST">
